@@ -45,7 +45,7 @@
                     <button style="color: white;" type="button" id="dropdownMenu1" data-toggle="dropdown" class="btn dropdown-toggle bt-roxo">Entrar <span class="caret"></span></button>
                     <ul class="dropdown-menu dropdown-menu-right mt-2">
                         <li class="px-3 py-2">
-                            <form action="backend/login.php" method="post" class="form bt-entrar" role="form">
+                            <form action="../backend/login.php" method="post" class="form bt-entrar" role="form">
                                 <div class="form-group">
                                     <input name="usuario" id="emailInput" placeholder="Usuario" class="form-control form-control-sm " type="text " required=" ">
                                 </div>
