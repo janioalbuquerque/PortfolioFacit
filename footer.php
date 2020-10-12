@@ -22,9 +22,10 @@
   <div class="card" style="background-color: rgba(255, 255, 255,0);">
    
     <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      <h5 class="card-title">Sobre o Portfólio</h5>
+      <p class="card-text">Este portfólio foi desenvolvido por acadêmicos do curso de
+         análise e desenvolvimento de sistemas da Faculdade de Ciências do Tocantins - FACIT.</p>
+      
     </div>
   </div>
 </div>

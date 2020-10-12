@@ -150,7 +150,7 @@ foreach ($info as $key => $value) {
           <a class="nav-link active" href="perfil.php">Perfil</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="trabalhos.php">Trabalhos</a>
+          <a class="nav-link" href="#">Trabalhos</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="novo.php">Novo Trabalho</a>
@@ -162,117 +162,53 @@ foreach ($info as $key => $value) {
         
     </ul><!--FINALIZANDO MENU LATERAL / SIDEBAR-->
 
-
-
     <div class="col-10 ">
-    <form style="display: flex; flex-direction: row"  method="post">
-
-        <div style="padding: 5px; margin: 0 auto; width: 40%" class="item1 col-5 mt-5">
-         
-        <div class="form-group">
-          <label class="h6" for="exampleFormControlInput1">Nome</label>
-          <input name="nome" class="form-control" placeholder='<?php echo $value["nome"];?>' type="text" >
+        <div class="input-group mb-3 mt-3">
+          <input type="text" class="form-control" placeholder="Pesquise o trabalho!" aria-label="Recipient's username" aria-describedby="basic-addon2">
+          <div class="input-group-append">
+            <button name="btok" class="btn btn-outline-secondary" type="button">Pesquisar</button>
+          </div>
         </div>
 
-        <div class="form-group">
-         <label class="h6" for="exampleFormControlInput1">Sobrenome</label>
-          <input name="sobrenome" class="form-control" placeholder='<?php echo $value["sobrenome"];?>' type="text">
-        </div>
-
-        <div class="form-group">
-          <label class="h6" for="exampleFormControlInput1">Nascimento</label>
-          <input name="nascimento" class="form-control" placeholder='<?php echo $data?>' type="text" onfocus="(this.type='date')" onblur="(this.type='text' this.placeholder='<?php echo $data?>')">
-        </div>
-
-        <div class="form-group">
-          <label class="h6" for="exampleFormControlInput1">CPF</label>
-          <input name="cpf" class="form-control" placeholder='<?php echo $value["cpf"];?>' type="text">
-        </div>
-
-        <div class="form-group">
-          <label class="h6" for="exampleFormControlInput1">Genero</label>
-          <select placeholder='<?php echo $value["sexo"];?>' name="sexo" class=" form-control" id="exampleFormControlSelect1">
-                <option value="Masculino">Masculino</option>
-                <option value="Feminino">Feminino</option>
-                <option value="Outro">Outro</option>    
-            </select>
-          
-        </div>
-
-        <div class="form-group">
-          <label class="h6" for="exampleFormControlInput1">Curso</label>
-          <select placeholder='<?php echo $value["curso"];?>'  name="curso" class=" form-control" id="exampleFormControlSelect1">
-                <option value="ADS">ADS</option>
-            </select>
-         
-        </div>
-
-
-       
-    </div>
-<div class="item2 col-5" style="padding: 5px; margin: 0 auto; width: 40%">
-
-        <div class="form-group mt-5 ">
-          <label class="h6" for="exampleFormControlInput1">Turno</label>
-          <select placeholder='<?php echo $value["turno"];?>' name="turno" class=" form-control" id="exampleFormControlSelect1">
-                <option value="Manhã">Manhã</option>
-                <option value="Tarde">Tarde</option>
-                <option value="Noite">Noite</option>    
-            </select>
-         
-        </div>
-
-
-        <div class="form-group">
-          <label class="h6" for="exampleFormControlInput1">Periodo</label>
-          <select placeholder='<?php echo $value["periodo"];?>' name="periodo" class=" form-control" id="exampleFormControlSelect1">
-                <option value="1º Semestre">1º Semestre</option>
-                <option value="2º Semestre">2º Semestre</option>
-                <option value="3º Semestre">3º Semestre</option>
-                <option value="4º Semestre">4º Semestre</option>
-                <option value="5º Semestre">5º Semestre</option>
-                <option value="Outro">Outro</option>
-                  
-            </select>
-        </div>
-
-        <div class="form-group">
-          <label class="h6" for="exampleFormControlInput1">Descricao</label>
-          <textarea name="descricao" placeholder='<?php echo $value["descricao"];?>' class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-        </div>
-
-        <div class="form-group">
-          <label class="h6" for="exampleFormControlInput1">Cidade</label>
-          <input name="cidade" class="form-control" placeholder='<?php echo $value["cidade"];?>' type="text">
-        </div>
-
-        <div class="form-group">
-          <label class="h6" for="exampleFormControlInput1">Estado</label>
-          <input name="estado" class="form-control" placeholder='<?php echo $value["estado"];?>' type="text">
-        </div>
-
-        
-
-
-        
-
-        <button name="acao" id="button" style="background-color: #8e24aa;" type="submit " class="btn bt-roxo btn-block text-white ">Alterar</span></button>
-
-
-        
-        
-        
-        
-        
-        
-        
-        
-</div>
-    
-    </form>
+        <table class="table">
+                <thead>
+                    <tr class="filters">
+                        <th><input type="text" class="form-control" placeholder="#" disabled></th>
+                        <th><input type="text" class="form-control" placeholder="Titulo do Trabalho" disabled></th>
+                        <th><input type="text" class="form-control" placeholder="Data de Publicação" disabled></th>
+                        <th><input type="text" class="form-control" placeholder="Descrição" disabled></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Trabalho 01</td>
+                        <td>01/05/2020</td>
+                        <td>Descrição projeto 01</td>
+                        <th>Edit</th>
+                       <th>Delete</th>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Trabalho 02</td>
+                        <td>01/05/2020</td>
+                        <td>Descrição projeto 01</td>
+                        <th>Edit</th>
+                       <th>Delete</th>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Trabalho 03</td>
+                        <td>01/05/2020</td>
+                        <td>Descrição projeto 01</td>
+                        <th>Edit</th>
+                       <th>Delete</th>
+                    </tr>
+                </tbody>
+            </table>
     </div>
 
-    </div><!--container-->
+
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>

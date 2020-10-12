@@ -47,7 +47,7 @@
               <h2 class="display-8 ml-0 mt-5 col-8 mx-auto text-center ">Um curso que prepara o profissional para os desafios de um mercado cada vez mais promissor.</h2>
         </div>
 
-          <button   type="button " class="btn float-right mt-5 mr-5 mx-auto bg-roxo "> <a style="text-decoration: none; color: white;" href="pages/projetos.php"> Conheça o Curso <img src="https://img.icons8.com/dotty/24/000000/filled-sent.png "/></a></button>
+          <button   type="button " class="btn float-right mt-5 mr-5 mx-auto bg-roxo "> <a style="text-decoration: none; color: white;" href="sobre.php"> Conheça o Curso <img src="https://img.icons8.com/dotty/24/000000/filled-sent.png "/></a></button>
 
         </div>
     </div> 
@@ -114,7 +114,7 @@
                             <!--======================INICIANDO TEXTO ANIMADO=====================-->
 
         <h1 class=" display-1 mb-5" style="text-align:center; color: #8e24aa; position: relative; top: 100px;">
-            <a style="color:black; font-weight: bold;"href="" class="typewrite text-animado mb-5" data-period="500" data-type='[ "Somos o NOVO!", "Somos o AGORA!", " Somos o FUTURO!",  "Somos o curso de ADS da FACIT!!" ]'>
+            <a style="color:black; font-weight: bold;"href="" class="typewrite text-animado mb-5" data-period="100" data-type='[ "Somos o NOVO!", " Somos o FUTURO!",  "Somos o curso de ADS da FACIT!!" ]'>
                 <span class="wrap"></span>
             </a>
   
@@ -131,27 +131,28 @@
 <div style=" background-color: rgba(180, 198, 240,1);">
   <div class="card-group mt-5">
       <div class="card m-5 shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
+      
         <img class="card-img-top" src="img/banner-1.jpg" alt="Card image cap">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
+          <h5 class="card-title">Titulo do Trabalho</h5>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+          <a href="pages/projeto-1.php" class="btn btn-primary">Ver Trabalho</a>
         </div>
       </div>
       <div class="card m-5 shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
         <img class="card-img-top" src="img/banner-1.jpg" alt="Card image cap">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
+          <h5 class="card-title">Titulo do Trabalho</h5>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+          <a href="#" class="btn btn-primary">Ver Trabalho</a>
         </div>
       </div>
       <div class="card m-5 shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
         <img class="card-img-top" src="img/banner-1.jpg" alt="Card image cap">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
+          <h5 class="card-title">Titulo do Trabalho</h5>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+          <a href="#" class="btn btn-primary">Ver Trabalho</a>
         </div>
       </div>
   </div>

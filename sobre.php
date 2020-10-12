@@ -60,8 +60,8 @@
 
 		<div style="margin:70px">
 
-		<li>Prof. Me. Cássio Cipriano Nogueira</li>
-		<a href="http://buscatextual.cnpq.br/Cássio ">http://buscatextual.cnpq.br/Cássio</a> 
+<li>Prof. Me. Cássio Cipriano Nogueira</li>
+<a href="http://buscatextual.cnpq.br/Cássio ">http://buscatextual.cnpq.br/Cássio</a> 
 
 <li>Prof. Esp. Alison Carlos da Paixão Reis</li>
 <a href="http://buscatextual.cnpq.br/Alison">http://buscatextual.cnpq.br/Alison</a>

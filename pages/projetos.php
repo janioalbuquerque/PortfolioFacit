@@ -32,7 +32,7 @@
                 <a style="text-decoration: none; color:black;" href="projeto-1.php">
                     <img src="../img/banner-1.jpg" class="card-img-top" alt="...">
                     <div style="background-color: white;" class="card-body">
-                        <h5 class="card-title">Card title that wraps to a new line</h5>
+                        <h5 class="card-title">Titulo do Trabalho</h5>
                         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                     </div>
                 </a>
@@ -43,7 +43,7 @@
         <a style="text-decoration: none; color:black;" href="../index.php">
             <img src="../img/banner-1.jpg" class="card-img-top" alt="...">
             <div style="background-color: white;" class="card-body">
-                <h5 class="card-title">Card title that wraps to a new line</h5>
+                <h5 class="card-title">Titulo do Trabalho</h5>
                 <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
             </div>
         </a>
@@ -53,7 +53,7 @@
         <a style="text-decoration: none; color:black;" href="../index.php">
             <img src="../img/banner-1.jpg" class="card-img-top" alt="...">
             <div style="background-color: white;" class="card-body">
-                <h5 class="card-title">Card title that wraps to a new line</h5>
+                <h5 class="card-title">Titulo do Trabalho</h5>
                 <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
             </div>
         </a>
@@ -63,7 +63,7 @@
         <a style="text-decoration: none; color:black;" href="../index.php">
             <img src="../img/banner-1.jpg" class="card-img-top" alt="...">
             <div style="background-color: white;" class="card-body">
-                <h5 class="card-title">Card title that wraps to a new line</h5>
+                <h5 class="card-title">Titulo do Trabalho</h5>
                 <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
             </div>
         </a>
@@ -73,7 +73,7 @@
         <a style="text-decoration: none; color:black;" href="../index.php">
             <img src="../img/banner-1.jpg" class="card-img-top" alt="...">
             <div style="background-color: white;" class="card-body">
-                <h5 class="card-title">Card title that wraps to a new line</h5>
+                <h5 class="card-title">Titulo do Trabalho</h5>
                 <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
             </div>
         </a>
@@ -83,7 +83,7 @@
         <a style="text-decoration: none; color:black;" href="../index.php">
             <img src="../img/banner-1.jpg" class="card-img-top" alt="...">
             <div style="background-color: white;" class="card-body">
-                <h5 class="card-title">Card title that wraps to a new line</h5>
+                <h5 class="card-title">Titulo do Trabalho</h5>
                 <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
             </div>
         </a>
