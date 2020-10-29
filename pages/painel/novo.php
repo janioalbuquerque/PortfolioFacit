@@ -50,6 +50,7 @@ foreach ($info as $key => $value) {
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     
     
     
@@ -255,7 +256,7 @@ foreach ($info as $key => $value) {
 
       
 
-      <button value="Postar trabalho" name="acao"  style="width: 30%; margin: 0 auto;" type="submit" class="btn btn-primary mb-2 mt-5">Confirmar Postagem</button>
+      <button data-toggle="modal" data-target="#exampleModal" value="Postar trabalho" name="acao"  style="width: 30%; margin: 0 auto;" type="submit" class="btn btn-primary mb-2 mt-5">Confirmar Postagem</button>
 
       
      
@@ -274,7 +275,11 @@ foreach ($info as $key => $value) {
     
     </form>
 
-           <script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js " integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js " integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV " crossorigin="anonymous "></script>
+
+    <script>
                           let teste = document.getElementById('teste');
                           let tamanho = document.defaultView.getComputedStyle(teste, null).getPropertyValue('height');
                           let sidebar = document.getElementById('sidebar');
@@ -286,7 +291,15 @@ foreach ($info as $key => $value) {
                
           
 
+
+<!-- Modal -->
+<div   class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div style="font-size: 24px;" class="modal-dialog" role="document">
+   
+  <span style="text-align: center; margin: 25% auto; width: 100%; height: 100%; font-size: 240px;" class="fa fa-spinner fa-spin fa-5x"></span>
     
+  </div>
+</div>
 
     
     </div>

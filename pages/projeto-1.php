@@ -1,105 +1,60 @@
 <?php
     
     include "header.php";
+
+
+
+$conn = mysqli_connect("localhost","root","");
+mysqli_select_db($conn,"databaseportifolio");
+
+$qry = "SELECT * FROM trabalhosport WHERE id = 1";
+$res = mysqli_query($conn,$qry);
+
+while($fila = mysqli_fetch_array($res))
+
+
+{
+
+
+   
+
+
+
+
+
+
     
 ?>
 
 
 <div style="text-align: justify;" class="w-100 p-2">
-    <img style="width: 30%;" src="../img/03.jpg" class="img-fluid float-right p-2" alt="Responsive image">
-    <h2 class="p-2">TITULO DO TRABALHO AQUI EM CIMA</h2>
-    <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita totam placeat ad possimus!
-        Repellendus vero, fugiat ut atque dolore quaerat cupiditate, quos architecto, sint explicabo autem 
-        excepturi at possimus sunt. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita totam placeat ad possimus!
-        Repellendus vero, fugiat ut atque dolore quaerat cupiditate, quos architecto, sint explicabo autem 
-        excepturi at possimus sunt. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita totam placeat ad possimus!
-        Repellendus vero, fugiat ut atque dolore quaerat cupiditate, quos architecto, sint explicabo autem 
-        excepturi at possimus sunt.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita totam placeat ad possimus!
-        Repellendus vero, fugiat ut atque dolore quaerat cupiditate, quos architecto, sint explicabo autem 
-        excepturi at possimus sunt.
-    </p>
+    <?php echo '<img style="width: 35%;" src="data:image/jpeg;base64,' . base64_encode( $fila['img_right'] ) . '" class="img-fluid float-right p-4 mt-5" alt="Responsive image">' ?>
+    
+        <?php echo '<h2 class="p-2">' . $fila["titulo"] . '</h2>' ; ?>
+    
+        <?php echo '<p>' . $fila["parag1"] . '</p>' ; ?>
+    
 
-    <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita totam placeat ad possimus!
-        Repellendus vero, fugiat ut atque dolore quaerat cupiditate, quos architecto, sint explicabo autem 
-        excepturi at possimus sunt.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita totam placeat ad possimus!
-        Repellendus vero, fugiat ut atque dolore quaerat cupiditate, quos architecto, sint explicabo autem 
-        excepturi at possimus sunt.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita totam placeat ad possimus!
-        Repellendus vero, fugiat ut atque dolore quaerat cupiditate, quos architecto, sint explicabo autem 
-        excepturi at possimus sunt.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita totam placeat ad possimus!
-        Repellendus vero, fugiat ut atque dolore quaerat cupiditate, quos architecto, sint explicabo autem 
-        excepturi at possimus sunt.
-    </p>
+        <?php echo '<p>' . $fila["parag2"] . '</p>' ; ?>
 
-    <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita totam placeat ad possimus!
-        Repellendus vero, fugiat ut atque dolore quaerat cupiditate, quos architecto, sint explicabo autem 
-        excepturi at possimus sunt.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita totam placeat ad possimus!
-        Repellendus vero, fugiat ut atque dolore quaerat cupiditate, quos architecto, sint explicabo autem 
-        excepturi at possimus sunt.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita totam placeat ad possimus!
-        Repellendus vero, fugiat ut atque dolore quaerat cupiditate, quos architecto, sint explicabo autem 
-        excepturi at possimus sunt.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita totam placeat ad possimus!
-        Repellendus vero, fugiat ut atque dolore quaerat cupiditate, quos architecto, sint explicabo autem 
-        excepturi at possimus sunt.
-    </p>
+        <?php echo '<p>' . $fila["parag3"] . '</p>' ; ?>
 
-    <img style="width: 35%;" src="../img/03.jpg" class="img-fluid float-left p-2" alt="Responsive image">
+        <?php echo '<img style="width: 35%;" src="data:image/jpeg;base64,' . base64_encode( $fila['img_left'] ) . '" class="img-fluid float-left p-4 mt-5" alt="Responsive image">' ?>
 
-    <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita totam placeat ad possimus!
-        Repellendus vero, fugiat ut atque dolore quaerat cupiditate, quos architecto, sint explicabo autem 
-        excepturi at possimus sunt.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita totam placeat ad possimus!
-        Repellendus vero, fugiat ut atque dolore quaerat cupiditate, quos architecto, sint explicabo autem 
-        excepturi at possimus sunt.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita totam placeat ad possimus!
-        Repellendus vero, fugiat ut atque dolore quaerat cupiditate, quos architecto, sint explicabo autem 
-        excepturi at possimus sunt.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita totam placeat ad possimus!
-        Repellendus vero, fugiat ut atque dolore quaerat cupiditate, quos architecto, sint explicabo autem 
-        excepturi at possimus sunt.
-    </p>
+        <?php echo '<p>' . $fila["parag4"] . '</p>' ; ?>
 
-    <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita totam placeat ad possimus!
-        Repellendus vero, fugiat ut atque dolore quaerat cupiditate, quos architecto, sint explicabo autem 
-        excepturi at possimus sunt.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita totam placeat ad possimus!
-        Repellendus vero, fugiat ut atque dolore quaerat cupiditate, quos architecto, sint explicabo autem 
-        excepturi at possimus sunt.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita totam placeat ad possimus!
-        Repellendus vero, fugiat ut atque dolore quaerat cupiditate, quos architecto, sint explicabo autem 
-        excepturi at possimus sunt.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita totam placeat ad possimus!
-        Repellendus vero, fugiat ut atque dolore quaerat cupiditate, quos architecto, sint explicabo autem 
-        excepturi at possimus sunt.
-    </p>
+        <?php echo '<p>' . $fila["parag5"] . '</p>' ; ?>
 
-    <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita totam placeat ad possimus!
-        Repellendus vero, fugiat ut atque dolore quaerat cupiditate, quos architecto, sint explicabo autem 
-        excepturi at possimus sunt.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita totam placeat ad possimus!
-        Repellendus vero, fugiat ut atque dolore quaerat cupiditate, quos architecto, sint explicabo autem 
-        excepturi at possimus sunt.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita totam placeat ad possimus!
-        Repellendus vero, fugiat ut atque dolore quaerat cupiditate, quos architecto, sint explicabo autem 
-        excepturi at possimus sunt.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita totam placeat ad possimus!
-        Repellendus vero, fugiat ut atque dolore quaerat cupiditate, quos architecto, sint explicabo autem 
-        excepturi at possimus sunt.
-    </p>
+        <?php echo '<p>' . $fila["parag6"] . '</p>' ; ?>
 
-    <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita totam placeat ad possimus!
-        Repellendus vero, fugiat ut atque dolore quaerat cupiditate, quos architecto, sint explicabo autem 
-        excepturi at possimus sunt.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita totam placeat ad possimus!
-        Repellendus vero, fugiat ut atque dolore quaerat cupiditate, quos architecto, sint explicabo autem 
-        excepturi at possimus sunt.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita totam placeat ad possimus!
-        Repellendus vero, fugiat ut atque dolore quaerat cupiditate, quos architecto, sint explicabo autem 
-        excepturi at possimus sunt.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita totam placeat ad possimus!
-        Repellendus vero, fugiat ut atque dolore quaerat cupiditate, quos architecto, sint explicabo autem 
-        excepturi at possimus sunt.
-    </p>
+        <?php echo '<p>' . $fila["parag7"] . '</p>' ; ?>
 
     <div class="container">
         <video style="margin: 0 auto;" class="mt-4 ml-5 video-01" width="90%" controls="">
-            <source src="../img/video-03.mp4" type="video/mp4">
+         <source type="video/mp4" src="painel/uploads/videos/<?php echo $fila['video']?>">
         </video>
     </div>
-
+    
     <div style="background-color: #B4C6F0;">
 
         <div class="container">
@@ -136,14 +91,26 @@
     
     <h3 class="mt-5">Links:</h3>
 
-    <a href="#">Link aqui!</a> <br>
-    <a href="#">Link aqui!</a> <br>
-    <a href="#">Link aqui!</a> <br>
-    <a href="#">Link aqui!</a> <br>
+    <a href="#"><?php echo $fila['link1']?></a> <br>
+    <a href="#"><?php echo $fila['link2']?></a> <br>
+    <a href="#"><?php echo $fila['link3']?></a> <br>
+    <a href="#"><?php echo $fila['link4']?></a> <br>
+    <a href="#"><?php echo $fila['link5']?></a> <br>
 </div>
 
 <?php
 
     include "footer.php";
-
+}
 ?>
+
+
+ 
+</body>
+
+</body>
+
+
+</html>
+
+

@@ -6,8 +6,8 @@
   $id = $_SESSION['id_usuario'];
 
 
-  $pdo = new PDO("mysql:host=localhost;dbname=login","root","");
-  $sql = $pdo->prepare("SELECT * FROM `usuario` where `usuario_id` = '{$id}'");
+  $pdo = new PDO("mysql:host=localhost;dbname=databaseportfolio","root","");
+  $sql = $pdo->prepare("SELECT * FROM `usuarios` where `usuario_id` = '{$id}'");
   
   $sql->execute();
 

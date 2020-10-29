@@ -15,9 +15,9 @@ $senha = mysqli_real_escape_string($conexao, $_POST['senha']);
 
 
 #VERIFICANDO SE EXISTE O USUARIO E SENHA NA TABELA USUARIOS
-$query = "select usuario_id, usuario from usuario where usuario = '{$usuario}' and senha = md5('{$senha}')";
+$query = "select usuario_id, usuario from usuarios where usuario = '{$usuario}' and senha = md5('{$senha}')";
 
-$info = 
+
 
 #VERIFICANDO SE GEROU ALGUM REGISTRO NA PESQUISA
 $result = mysqli_query($conexao, $query);
