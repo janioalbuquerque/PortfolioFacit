@@ -23,8 +23,8 @@
 				
 				move_uploaded_file($_FILES['arquivo']['tmp_name'], $_UP['pasta']. $nome_final);
 
-				$pdo = new PDO("mysql:host=localhost;dbname=login","root","");
-  				$sql = $pdo->prepare("UPDATE `usuario` SET `img_perfil` = '$nome_final' WHERE `usuario`.`usuario_id` = '{$id}'");
+				$pdo = new PDO("mysql:host=localhost;dbname=databaseportfolio","root","");
+  				$sql = $pdo->prepare("UPDATE `usuarios` SET `img_perfil` = '$nome_final' WHERE `usuarios`.`usuario_id` = '{$id}'");
 
 				$sql->execute();
 					

@@ -13,6 +13,8 @@ body {
 }
 
 
+
+
 /*== FINALIZANDO ESTILOS PADRÕES INICIAS ==*/
 
 
@@ -95,9 +97,100 @@ li ul li form.form div.alert {
 @media (max-width: 500px) {
     .title-1 {
         font-size: 42px !important;
-        text-align: center;
+        text-align: left;
+        
+    }
+
+    .carousel-topo-index {
+       
+        width: 110%;
+    }
+
+    .chamada-text-index{
+        font-size: 25px !important;
+        text-align: justify !important;
+        width: 110% !important;
+    }
+
+    .video-index {
+        margin: 0;
+        padding: 0;
+        margin-bottom: 0;
+    }
+
+    .texto-video-index {
+        margin-top: 0 !important;
+        padding-left: 0;
+        
     }
     .text-animado {
         font-size: 48px;
     }
+
+    .card-index {
+        width: 80% !important;
+        
+    }
+
+    .carousel-rodape-index{
+        width: 98% !important;
+        margin-bottom: 0 !important;
+          
+    }
+
+    .div-carousel-alls-index {
+        height: 60% !important;
+    }
+
+    .banner-sobre img{
+        margin-top: -20px !important;
+    }
+
+    .titulo-sobre {
+        display: none;
+    }
+
+    .texto-sobre {
+        width: 100%;
+        margin: 0 !important;
+    }
+
+    .texto-sobre p {
+        width: 90%;
+        margin: 20px !important;
+    }
+
+    .corpo-docente-sobre {
+        width: 100%;
+        margin: 0 !important;
+        text-align: center;
+        
+    }
+
+    .div-background-projetos {
+        height: 110% !important;
+    }
+
+    .div-background-projetos h1 {
+        font-size: 58px !important;
+        width: 100%;
+    }
+
+    .div-background-projetos h2{
+        font-size: 36px !important;
+    }
+
+    .div-background-projetos h6 {
+        text-align: justify !important;
+        width: 90% !important;
+        padding-top: 30px !important;
+       
+    }
+}
+
+@media (max-width: 480px) {
+    .div-background-projetos {
+        height: 160% !important;
+    }
+
 }

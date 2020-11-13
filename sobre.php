@@ -4,17 +4,17 @@
 		
 
 		
-		<div style="text-align:center">
-		<p><h1> Sobre o curso de Analise e Desenvolvimento de Sistemas da FACIT </h1></p>
+		<div style="text-align:center;">
+		<p ><h1 style=" font-size: 36px;" class="titulo-sobre"> Sobre o curso de Analise e Desenvolvimento de Sistemas da FACIT </h1></p>
 		</div>
 		
 		
-		<div style="text-align: center ">
-			<p><img src="img/sobre.jpeg" width=100% height=400></p>
+		<div class="banner-sobre" style="text-align: center ">
+			<p><img src="img/banner-21.jpg" width=100% height=400></p>
 		</div>
 		
 
-		<div style="margin: 90px ;text-align:justify">	
+		<div class="texto-sobre" style="margin: 90px ;text-align:justify">	
 		<p>
 			O curso de Análise e Desenvimento de Sistemas da FACIT prepara o profissional para os desafios de um mercado cada vez mais promissor. Uma pequisa internacional apontou que as profissões do futuro vão estar ligadas ao setor da tecnologia e informática. Entre essas profissões, destaca-se a de programador que é uma das atividades trabalhadas ao longo do curso de Análise e Desenvolvimento de Sistemas.
 		</p>
@@ -53,7 +53,7 @@
 		</p>
 		</div>
 
-	<div style="margin: 70px; border:solid purple; background-color: purple;">
+	<div class="corpo-docente-sobre" style="margin: 70px; border:solid purple; background-color: purple;">
 		<p><h1 style="color: white;">Corpo Docente</h1></p>
 	</div>
 		

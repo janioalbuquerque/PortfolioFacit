@@ -82,3 +82,45 @@
     background-position: center;
 }
 
+.container-slide {
+    padding-bottom: 200px !important;
+}
+
+.container-slide .slide02 {
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+    .container-slide {
+        padding-bottom: 0px !important;
+    }
+
+
+    .container-slide .slide02 {
+        display: block;
+    }
+
+    .container-slide .slide02 img {
+        width: 100% !important;
+        
+        height: 300px !important;
+    }
+
+    .container-slide .slide01 {
+        display: none;;
+    }
+
+    .container-video {
+        
+        width: 100%;
+    }
+
+    .container-video .video-01 {
+        width: 100%;
+        margin: 0 !important;
+    }
+
+
+}
+

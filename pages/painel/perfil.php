@@ -17,7 +17,7 @@ if (isset($_POST['acao'])):
   $sobrenome = $_POST['sobrenome'];
   $nascimento = $_POST['nascimento'];
   $cpf = $_POST['cpf'];
-  $sexo = $_POST['sexo'];
+  $sexo = $_POST['sexo'];  
   $curso = $_POST['curso'];
   $turno = $_POST['turno'];
   $periodo = $_POST['periodo'];
@@ -39,17 +39,18 @@ foreach ($info as $key => $value) {
   if (isset($_POST['acao'])):
     $dados = [$nome,$sobrenome,$nascimento,$cpf,$sexo,$curso,$turno,$periodo,$descricao,$cidade,$estado];
     $dados2= ['nome','sobrenome','nascimento','cpf','sexo','curso','turno','periodo','descricao','cidade','estado'];
-
+    
       for ($i=0; $i < 11; $i++) { 
        if (empty($dados[$i])) {
-         $dados[$i] = $value['$dados[$i]'];
+        
+          $dados[$i] = $value["$dados[$i]"];
        }else{
-      
-
-  $sql2 = $pdo->prepare("UPDATE `usuario` SET {$dados2[$i]} = '{$dados[$i]}' WHERE `usuario_id` = '{$id}'");
-  $sql2->execute();
+        
+          $sql2 = $pdo->prepare("UPDATE `usuarios` SET {$dados2[$i]} = '{$dados[$i]}' WHERE `usuario_id` = '{$id}'");
+          $sql2->execute();
+          
        }
-   
+       
    header('location: perfil.php');
       }
       
@@ -112,13 +113,13 @@ foreach ($info as $key => $value) {
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link text-white" href="#">Inicio <span class="sr-only">(current)</span></a>
+                    <a class="nav-link text-white" href="../../index.php">Inicio <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link text-white" href="#">Sobre<span class="sr-only">(current)</span></a>
+                    <a class="nav-link text-white" href="../../sobre.php">Sobre<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link text-white" href="#">Contatos<span class="sr-only">(current)</span></a>
+                    <a class="nav-link text-white" href="../../pages/projetos.php">Projetos<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
                     <a class="nav-link text-white" href="../../backend/logout.php">Sair<span class="sr-only">(current)</span></a>
@@ -135,12 +136,12 @@ foreach ($info as $key => $value) {
         
 
     <!--INICIANDO MENU LATERAL / SIDEBAR-->
-    <div style="width: 100%; height: 100%; display:flex; direction-flex: row;" class="cont">
+    <div style="width: 100%; height: 100%; display:flex; flex-direction: row;" class=" sidebar cont">
 
-    <ul class="nav flex-column col-2 h-100 bg-roxo">
+    <ul class="nav flex-column col-12	col-sm-12	col-md-4 col-lg-2	col-xl-2 h-100 bg-roxo ul-sidebar">
       <!--INICIANDO CARD DO USUARIO-->
-      <div class="card bg-roxo mt-3 ml-2">
-        <img  class="card-img-top" style="border-radius: 50%; width: 200px; height: 200px;" src='../../img/painel/perfil/<?php echo $value['img_perfil']; ?>'>
+      <div class="card bg-roxo mt-3">
+        <img  class="card-img-top" style="border-radius: 50%; max-width: 200px; max-height: 200px;" src='../../img/painel/perfil/<?php echo $value['img_perfil']; ?>'>
         <button type="button" class="btn " data-toggle="modal" data-target="#modalExemplo">
           Alterar foto
         </button>
@@ -164,10 +165,10 @@ foreach ($info as $key => $value) {
 
 
 
-    <div class="col-10 ">
-    <form style="display: flex; flex-direction: row"  method="post">
+    <div  class="flex-column col-12	col-sm-12	col-md-8 col-lg-10	col-xl-10">
+    <form style="display: flex; flex-direction: row;"  method="post">
 
-        <div style="padding: 5px; margin: 0 auto; width: 40%" class="item1 col-5 mt-5">
+        <div style="padding: 5px; margin: 0 auto; width: 40%" class="item1 col-12	col-sm-12	col-md-6 col-lg-5	col-xl-5 mt-5">
          
         <div class="form-group">
           <label class="h6" for="exampleFormControlInput1">Nome</label>
@@ -210,7 +211,7 @@ foreach ($info as $key => $value) {
 
        
     </div>
-<div class="item2 col-5" style="padding: 5px; margin: 0 auto; width: 40%">
+<div class="item2 col-12	col-sm-12	col-md-6 col-lg-5	col-xl-5" style="padding: 5px; margin: 0 auto; width: 40%">
 
         <div class="form-group mt-5 ">
           <label class="h6" for="exampleFormControlInput1">Turno</label>

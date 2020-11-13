@@ -1,14 +1,18 @@
 <?php include "header.php";?>
 <!--================================================-INICIANDO SESSÃO 1--==========================================--->
 
+
+
+
+
                                     <!--INICIANDO CHAMADA DE BOAS VINDAS-->
 
-<div style="background-image: url('../img/painel/perfil/bg-1-projetos.jpg'); height: 100%; background-size: cover;" >
+<div class="div-background-projetos" style="background-image: url('../img/painel/perfil/bg-1-projetos.jpg'); height: 100%; background-size: cover;" >
     <div class="pt-5">
 
-        <h1 class="display-2 pt-5" style="font-weight: bold; color: black; text-align: center;">SEJA BEM-VINDO</h1>
-        <h2 class="display-5 " style="font-weight: bold; color: black; text-align: center;">Somos Apaixonados Pelo que Fazemos</h2>
-        <h6 class="" style="font-size: 18px;margin: 0 auto;width: 50%;font-weight: bold; color: black; text-align: center;">
+        <h1 class="display-2 pt-5" style="font-size: 130px;font-weight: bold; color: black; text-align: center;">SEJA BEM-VINDO</h1>
+        <h2 class="display-5 mb-5" style="font-size: 52px;font-weight: bold; color: black; text-align: center;">Somos Apaixonados Pelo que Fazemos</h2>
+        <h6 class="" style="font-size: 24px;margin: 0 auto;width: 60%;font-weight: bold; color: black; text-align: center;">
         Somos apaixonado pelo futuro por isso, por isso escolhemos o curso de Analise e Desenvomvimento de sistema da FACIT,
         e temos o orgulho de apresentar para você alguns dos nossos projetos, sintasse a vontade para navegar
         pelo nosso portfólio e conferir alguns dos trabalhos que os acadêmicos do curso de ADS fizeram, desde já agradeçemos
@@ -200,3 +204,4 @@
 <script src="js/script.css "></script>
 </body>
 </html>
+

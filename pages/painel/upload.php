@@ -257,7 +257,7 @@ while($fila = mysqli_fetch_array($res))
 
 
 <div style="text-align: justify;" class="w-100 p-2">
-    <?php echo \'<img style="width: 35%;" src="data:image/jpeg;base64,\' . base64_encode( $fila[\'img_right\'] ) . \'" class="img-fluid float-right p-4 mt-5" alt="Responsive image">\' ?>
+    <?php echo \'<img style="width: 500px; height: 350px !important;" src="data:image/jpeg;base64,\' . base64_encode( $fila[\'img_right\'] ) . \'" class="img-fluid float-right p-4 mt-2" alt="Responsive image">\' ?>
     
         <?php echo \'<h2 class="p-2">\' . $fila["titulo"] . \'</h2>\' ; ?>
     
@@ -268,7 +268,7 @@ while($fila = mysqli_fetch_array($res))
 
         <?php echo \'<p>\' . $fila["parag3"] . \'</p>\' ; ?>
 
-        <?php echo \'<img style="width: 35%;" src="data:image/jpeg;base64,\' . base64_encode( $fila[\'img_left\'] ) . \'" class="img-fluid float-left p-4 mt-5" alt="Responsive image">\' ?>
+        <?php echo \'<img style="width: 500px; height: 350px !important;" src="data:image/jpeg;base64,\' . base64_encode( $fila[\'img_left\'] ) . \'" class="img-fluid float-left p-4 mt-5" alt="Responsive image">\' ?>
 
         <?php echo \'<p>\' . $fila["parag4"] . \'</p>\' ; ?>
 
@@ -278,15 +278,15 @@ while($fila = mysqli_fetch_array($res))
 
         <?php echo \'<p>\' . $fila["parag7"] . \'</p>\' ; ?>
 
-    <div class="container">
+        <div class="container mb-5 container-video">
         <video style="margin: 0 auto;" class="mt-4 ml-5 video-01" width="90%" controls="">
          <source type="video/mp4" src="../../painel/uploads/videos/<?php echo $fila[\'video\']?>">
         </video>
     </div>
     
-    <div style="background-color: #B4C6F0;">
+    <div class="container-slide" style="background-color: #B4C6F0;">
 
-        <div class="container">
+        <div class="container slide01">
             
             <div class="slide hi-slide">
                 <div style="margin-top: 25%;" class="hi-prev"></div>
@@ -305,9 +305,46 @@ while($fila = mysqli_fetch_array($res))
             </div>
             
         </div>
+
+        <div class="container w-100 pt-5 slide02">
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active w-100 h-100">
+                    
+                    <?php echo \'<img  class="d-block w-100 h-100" src="data:image/jpeg;base64,\' . base64_encode( $fila["img1"] ) . \'" alt="Img 1" />\'?>
+                    </div>
+                    <div class="carousel-item w-100 h-100">
+                    
+                    <?php echo \'<img  class="d-block w-100 h-100" src="data:image/jpeg;base64,\' . base64_encode( $fila["img2"] ) . \'" alt="Img 2" />\'?>
+                    </div>
+                    <div class="carousel-item w-100 h-100">
+                    
+                    <?php echo \'<img  class="d-block w-100 h-100" src="data:image/jpeg;base64,\' . base64_encode( $fila["img3"] ) . \'" alt="Img 3" />\'?>
+                    </div>
+
+                    <div class="carousel-item w-100 h-100">
+                    
+                    <?php echo \'<img  class="d-block w-100 h-100" src="data:image/jpeg;base64,\' . base64_encode( $fila["img4"] ) . \'" alt="Img 4" />\'?>
+                    </div>
+
+                    <div class="carousel-item w-100 h-100">
+                    
+                    <?php echo \'<img  class="d-block w-100 h-100" src="data:image/jpeg;base64,\' . base64_encode( $fila["img5"] ) . \'" alt="Img 5" />\'?>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
     
 		
-		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<br><br><br><br><br><br>
 	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 		<script type="text/javascript" src="../../js/jquery.hislide.js" ></script>
 		<script>

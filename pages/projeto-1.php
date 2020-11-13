@@ -5,7 +5,7 @@
 
 
 $conn = mysqli_connect("localhost","root","");
-mysqli_select_db($conn,"databaseportifolio");
+mysqli_select_db($conn,"databaseportfolio");
 
 $qry = "SELECT * FROM trabalhosport WHERE id = 1";
 $res = mysqli_query($conn,$qry);

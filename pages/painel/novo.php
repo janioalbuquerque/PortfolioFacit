@@ -6,8 +6,8 @@
   $id = $_SESSION['id_usuario'];
 
 
-  $pdo = new PDO("mysql:host=localhost;dbname=login","root","");
-  $sql = $pdo->prepare("SELECT * FROM `usuario` where `usuario_id` = '{$id}'");
+  $pdo = new PDO("mysql:host=localhost;dbname=databaseportfolio","root","");
+  $sql = $pdo->prepare("SELECT * FROM `usuarios` where `usuario_id` = '{$id}'");
   
   $sql->execute();
 
@@ -93,12 +93,12 @@ foreach ($info as $key => $value) {
     </nav><!--FINALIZANDO MENU / NAVBAR-->
 
     <!--INICIANDO MENU LATERAL / SIDEBAR-->
-    <div  style="width: 100%; height: 100%; display:flex; direction-flex: row;" class="cont">
+    <div  style="width: 100%; height: 100%; display:flex; flex-direction: row;" class="cont sidebar">
 
-    <ul id="sidebar"  style="height: 180%;" class="nav flex-column col-2 bg-roxo">
+    <ul id="sidebar"  style="height: 180%;" class="nav flex-column col-12	col-sm-12	col-md-4 col-lg-2	col-xl-2 h-100 bg-roxo ul-sidebar">
       <!--INICIANDO CARD DO USUARIO-->
       <div class="card bg-roxo mt-3 ml-2">
-        <img class="card-img-top" style="border-radius: 50%; width: 200px; height: 200px;" src='../../img/painel/perfil/<?php echo $value['img_perfil']; ?>'>
+        <img class="card-img-top" style="border-radius: 50%; max-width: 200px; max-height: 200px;" src='../../img/painel/perfil/<?php echo $value['img_perfil']; ?>'>
         <div class="card-body">
           <h5 class="card-title"><?php echo $value['nome']." "; echo $value['sobrenome']; ?></h5>
           <li class="nav-item">
@@ -119,21 +119,21 @@ foreach ($info as $key => $value) {
 
 
 
-    <div class="col-10" id="teste">
+    <div class="flex-column col-12	col-sm-12	col-md-8 col-lg-10	col-xl-10" id="teste">
     <form enctype='multipart/form-data' class="novotrabalho mt-5" style="display: flex; flex-direction: column;"  method="post" action="upload.php">
 
     
     
-      
+      <div class="item1">
 
       <div class="form-group">
           <label class="h6" for="exampleFormControlInput1">Titulo do Trabalho</label>
-          <input style="width: 400px;" name="title" class="form-control"  type="text" >
+          <input style="max-width: 400px;" name="title" class="form-control"  type="text" >
       </div>
 
       <div class="form-group">
           <label class="h6" for="exampleFormControlInput1">Descricao Reduzida para o Card</label>
-          <textarea maxlength="100" name="desc" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          <textarea maxlength="400" name="desc" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
       </div>
 
       <div id="teste"></div>
@@ -142,40 +142,40 @@ foreach ($info as $key => $value) {
 
       <div class="form-group">
           <label class="h6" for="exampleFormControlInput1">Link 1</label>
-          <input style="width: 400px;" name="link_1" class="form-control"  type="url" >
+          <input style="max-width: 400px;" name="link_1" class="form-control"  type="url" >
       </div>
 
       <div class="form-group">
           <label class="h6" for="exampleFormControlInput1">Link 2</label>
-          <input style="width: 400px;" name="link_2" class="form-control"  type="url" >
+          <input style="max-width: 400px;" name="link_2" class="form-control"  type="url" >
       </div>
 
       <div class="form-group">
           <label class="h6" for="exampleFormControlInput1">Link 3</label>
-          <input style="width: 400px;" name="link_3" class="form-control"  type="url" >
+          <input style="max-width: 400px;" name="link_3" class="form-control"  type="url" >
       </div>
 
       <div class="form-group">
           <label class="h6" for="exampleFormControlInput1">Link 4</label>
-          <input style="width: 400px;" name="link_4" class="form-control"  type="url" >
+          <input style="max-width: 400px;" name="link_4" class="form-control"  type="url" >
       </div>
 
       <div class="form-group">
           <label class="h6" for="exampleFormControlInput1">Link 4</label>
-          <input style="width: 400px;" name="link_5" class="form-control"  type="url" >
+          <input style="max-width: 400px;" name="link_5" class="form-control"  type="url" >
       </div>
 
       <div class="form-group file-field">
           <label class="h6 d-block" for="exampleFormControlInput1">Capa do Trabalho para o Card</label>
             <div class="btn btn-primary btn-sm ">
-            <input name="img_card" style="width: 400px;" type="file">
+            <input name="img_card" style="max-width: 400px;" type="file">
           </div>
       </div>
 
       <div class="form-group file-field">
           <label class="h6 d-block" for="exampleFormControlInput1">Video sobre o trabalho</label>
             <div class="btn btn-primary btn-sm ">
-            <input name="video" style="width: 400px;" type="file">
+            <input name="video" style="max-width: 400px;" type="file">
           </div>
       </div>
 
@@ -217,21 +217,21 @@ foreach ($info as $key => $value) {
       <div class="form-group file-field">
           <label class="h6 d-block" for="exampleFormControlInput1">Imagem esquerda</label>
             <div class="btn btn-primary btn-sm ">
-            <input style="width: 400px;" type="file" name="img_left">
+            <input style="max-width: 400px;" type="file" name="img_left">
           </div>
       </div>
 
       <div class="form-group file-field">
           <label class="h6 d-block" for="exampleFormControlInput1">TESTE</label>
             <div class="btn btn-primary btn-sm ">
-            <input style="width: 400px;" type="file" name="teste">
+            <input style="max-width: 400px;" type="file" name="teste">
           </div>
       </div>
 
       <div class="form-group file-field">
           <label class="h6 d-block" for="exampleFormControlInput1">Imagem direita</label>
             <div class="btn btn-primary btn-sm ">
-            <input style="width: 400px;" type="file" name="img_right">
+            <input style="max-width: 400px;" type="file" name="img_right">
           </div>
       </div>
 
@@ -260,7 +260,7 @@ foreach ($info as $key => $value) {
 
       
      
-
+      </div><!--item1-->  
       
 
       

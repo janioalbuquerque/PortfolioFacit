@@ -1,5 +1,5 @@
                                     <!---------------------INICIANDO FOOTER--------------------->
-                                    <div class="card-group mt-5" style="background: radial-gradient(rgba(180, 198, 240,1), #8e24aa);">
+<div class="card-group mt-5 mb-0 pb-0" style="background: radial-gradient(rgba(180, 198, 240,1), #8e24aa);">
   <div class="card" style="background-color: rgba(255, 255, 255,0);">
     
     <div class="card-body">
