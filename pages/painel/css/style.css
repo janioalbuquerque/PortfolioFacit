@@ -104,9 +104,12 @@ ul li a {
 
   @media (max-width: 768px) {
 
+    
+
     .sidebar {
        
        flex-direction: column !important;
+       
      
         text-align: center;
     }

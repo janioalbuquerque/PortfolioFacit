@@ -53,7 +53,7 @@
                                 </div>
                                 <div class="form-group ">
                                     
-                                    <button id="button"  name="acao" style="background-color: #8e24aa;" type="submit " class="btn bt-roxo btn-block text-white ">Entrar  <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span></button>
+                                    <button id="button"  name="acao" style="background-color: #8e24aa !important;" type="submit " class="btn bt-roxo btn-block text-white ">Entrar  <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span></button>
                                 </div>
                                 <?php
                                     if (isset($_SESSION['nao_autenticado'])): 

@@ -1,6 +1,7 @@
 <?php
  
   session_start();
+  
   include('../../backend/verifica_login.php');#SE NÃO EXISTIR SESSÃO DE USUARIO, VAI LEVAR DE VOLTA PARA INDEX
   
   $id = $_SESSION['id_usuario'];
@@ -45,7 +46,7 @@ foreach ($info as $key => $value) {
         
           $dados[$i] = $value["$dados[$i]"];
        }else{
-        
+          
           $sql2 = $pdo->prepare("UPDATE `usuarios` SET {$dados2[$i]} = '{$dados[$i]}' WHERE `usuario_id` = '{$id}'");
           $sql2->execute();
           
@@ -156,6 +157,9 @@ foreach ($info as $key => $value) {
         <li class="nav-item">
           <a class="nav-link" href="novo.php">Novo Trabalho</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../../cadastro.php">Novo Usuário</a>
+        </li>
           
         </div>
       </div><!--FINALIZANDO CARD DO USUARIO-->
@@ -192,10 +196,10 @@ foreach ($info as $key => $value) {
 
         <div class="form-group">
           <label class="h6" for="exampleFormControlInput1">Genero</label>
-          <select placeholder='<?php echo $value["sexo"];?>' name="sexo" class=" form-control" id="exampleFormControlSelect1">
-                <option value="Masculino">Masculino</option>
-                <option value="Feminino">Feminino</option>
-                <option value="Outro">Outro</option>    
+          <select name="sexo" class=" form-control" id="exampleFormControlSelect1">
+                <option <?=($value["sexo"] == 'Masculino')?'selected':''?> value="Masculino">Masculino</option>
+                <option <?=($value["sexo"] == 'Feminino')?'selected':''?> value="Feminino">Feminino</option>
+                <option <?=($value["sexo"] == 'Outro')?'selected':''?> value="Outro">Outro</option>    
             </select>
           
         </div>
@@ -208,17 +212,17 @@ foreach ($info as $key => $value) {
          
         </div>
 
-
+      
        
     </div>
 <div class="item2 col-12	col-sm-12	col-md-6 col-lg-5	col-xl-5" style="padding: 5px; margin: 0 auto; width: 40%">
 
         <div class="form-group mt-5 ">
           <label class="h6" for="exampleFormControlInput1">Turno</label>
-          <select placeholder='<?php echo $value["turno"];?>' name="turno" class=" form-control" id="exampleFormControlSelect1">
-                <option value="Manhã">Manhã</option>
-                <option value="Tarde">Tarde</option>
-                <option value="Noite">Noite</option>    
+          <select name="turno" class=" form-control" id="exampleFormControlSelect1">
+                <option <?=($value["turno"] == 'Manhã')?'selected':''?> value="Manhã">Manhã</option>
+                <option <?=($value["turno"] == 'Tarde')?'selected':''?> value="Tarde">Tarde</option>
+                <option <?=($value["turno"] == 'Noite')?'selected':''?> value="Noite">Noite</option>    
             </select>
          
         </div>
@@ -226,13 +230,13 @@ foreach ($info as $key => $value) {
 
         <div class="form-group">
           <label class="h6" for="exampleFormControlInput1">Periodo</label>
-          <select placeholder='<?php echo $value["periodo"];?>' name="periodo" class=" form-control" id="exampleFormControlSelect1">
-                <option value="1º Semestre">1º Semestre</option>
-                <option value="2º Semestre">2º Semestre</option>
-                <option value="3º Semestre">3º Semestre</option>
-                <option value="4º Semestre">4º Semestre</option>
-                <option value="5º Semestre">5º Semestre</option>
-                <option value="Outro">Outro</option>
+          <select name="periodo" class=" form-control" id="exampleFormControlSelect1">
+                <option <?=($value["periodo"] == '1º Semestre')?'selected':''?> value="1º Semestre">1º Semestre</option>
+                <option <?=($value["periodo"] == '2º Semestre')?'selected':''?> value="2º Semestre">2º Semestre</option>
+                <option <?=($value["periodo"] == '3º Semestre')?'selected':''?> value="3º Semestre">3º Semestre</option>
+                <option <?=($value["periodo"] == '4º Semestre')?'selected':''?> value="4º Semestre">4º Semestre</option>
+                <option <?=($value["periodo"] == '5º Semestre')?'selected':''?> value="5º Semestre">5º Semestre</option>
+                <option <?=($value["periodo"] == 'Outro')?'selected':''?> value="Outro">Outro</option>
                   
             </select>
         </div>

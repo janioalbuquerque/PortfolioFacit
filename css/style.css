@@ -9,7 +9,7 @@ html,
 body {
     width: 100%;
     height: 100%;
-    background-color: rgb(255, 255, 255);
+    
 }
 
 
@@ -21,12 +21,18 @@ body {
 /*== INICIANDO ESTILOS BACKGROUND COR FACIT ==*/
 
 .bg-roxo {
-    background-color: #8e24aa;
+    background-image: linear-gradient(to right, #8e24aa , rgb(79, 216, 209));
+    
     color: white;
 }
 
 .bg-roxo:hover {
     color: white
+}
+
+.row .bg-roxo {
+    background-color: #8e24aa !important;
+
 }
 
 button:focus {
@@ -185,6 +191,10 @@ li ul li form.form div.alert {
         width: 90% !important;
         padding-top: 30px !important;
        
+    }
+
+    iframe.iframe {
+        width: 20px !important;
     }
 }
 

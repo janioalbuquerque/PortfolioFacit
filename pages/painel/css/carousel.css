@@ -91,6 +91,9 @@
 }
 
 @media (max-width: 768px) {
+    .sidebar {
+        height: 100% !important;
+    }
 
     .container-slide {
         padding-bottom: 0px !important;
@@ -119,6 +122,10 @@
     .container-video .video-01 {
         width: 100%;
         margin: 0 !important;
+    }
+
+    .sidebar {
+        height: 100% !important;
     }
 
 

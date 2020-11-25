@@ -72,13 +72,13 @@ foreach ($info as $key => $value) {
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link text-white" href="#">Inicio <span class="sr-only">(current)</span></a>
+                    <a class="nav-link text-white" href="../../index.php">Inicio <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link text-white" href="#">Sobre<span class="sr-only">(current)</span></a>
+                    <a class="nav-link text-white" href="../../sobre.php">Sobre<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link text-white" href="#">Contatos<span class="sr-only">(current)</span></a>
+                    <a class="nav-link text-white" href="../projetos.php">Projetos<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
                     <a class="nav-link text-white" href="../../backend/logout.php">Sair<span class="sr-only">(current)</span></a>
@@ -93,9 +93,9 @@ foreach ($info as $key => $value) {
     </nav><!--FINALIZANDO MENU / NAVBAR-->
 
     <!--INICIANDO MENU LATERAL / SIDEBAR-->
-    <div  style="width: 100%; height: 100%; display:flex; flex-direction: row;" class="cont sidebar">
+    <div  style="width: 100%; display:flex !important; flex-direction: row;" class="cont sidebar" id="sidebarok">
 
-    <ul id="sidebar"  style="height: 180%;" class="nav flex-column col-12	col-sm-12	col-md-4 col-lg-2	col-xl-2 h-100 bg-roxo ul-sidebar">
+    <ul id=""  class="nav flex-column col-12	col-sm-12	col-md-4 col-lg-2	col-xl-2 bg-roxo ul-sidebar">
       <!--INICIANDO CARD DO USUARIO-->
       <div class="card bg-roxo mt-3 ml-2">
         <img class="card-img-top" style="border-radius: 50%; max-width: 200px; max-height: 200px;" src='../../img/painel/perfil/<?php echo $value['img_perfil']; ?>'>
@@ -105,7 +105,7 @@ foreach ($info as $key => $value) {
           <a class="nav-link active" href="perfil.php">Perfil</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Trabalhos</a>
+          <a class="nav-link" href="trabalhos.php">Trabalhos</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="novo.php">Novo Trabalho</a>
@@ -161,7 +161,7 @@ foreach ($info as $key => $value) {
       </div>
 
       <div class="form-group">
-          <label class="h6" for="exampleFormControlInput1">Link 4</label>
+          <label class="h6" for="exampleFormControlInput1">Link 5</label>
           <input style="max-width: 400px;" name="link_5" class="form-control"  type="url" >
       </div>
 
@@ -181,37 +181,37 @@ foreach ($info as $key => $value) {
 
       <div class="form-group">
           <label class="h6" for="exampleFormControlInput1">Paragrafo 1</label>
-          <textarea maxlength="900" name="p1" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          <textarea maxlength="800" name="p1" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
       </div>
 
       <div class="form-group">
           <label class="h6" for="exampleFormControlInput1">Paragrafo 2</label>
-          <textarea maxlength="900" name="p2" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          <textarea maxlength="800" name="p2" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
       </div>
 
       <div class="form-group">
           <label class="h6" for="exampleFormControlInput1">Paragrafo 3</label>
-          <textarea maxlength="900" name="p3" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          <textarea maxlength="800" name="p3" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
       </div>
 
       <div class="form-group">
           <label class="h6" for="exampleFormControlInput1">Paragrafo 4</label>
-          <textarea maxlength="900" name="p4" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          <textarea maxlength="800" name="p4" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
       </div>
 
       <div class="form-group">
           <label class="h6" for="exampleFormControlInput1">Paragrafo 5</label>
-          <textarea maxlength="900" name="p5" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          <textarea maxlength="800" name="p5" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
       </div>
 
       <div class="form-group">
           <label class="h6" for="exampleFormControlInput1">Paragrafo 6</label>
-          <textarea maxlength="900" name="p6" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          <textarea maxlength="800" name="p6" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
       </div>
 
       <div class="form-group">
           <label class="h6" for="exampleFormControlInput1">Paragrafo 7</label>
-          <textarea maxlength="900" name="p7" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          <textarea maxlength="800" name="p7" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
       </div>
 
       <div class="form-group file-field">
@@ -221,12 +221,6 @@ foreach ($info as $key => $value) {
           </div>
       </div>
 
-      <div class="form-group file-field">
-          <label class="h6 d-block" for="exampleFormControlInput1">TESTE</label>
-            <div class="btn btn-primary btn-sm ">
-            <input style="max-width: 400px;" type="file" name="teste">
-          </div>
-      </div>
 
       <div class="form-group file-field">
           <label class="h6 d-block" for="exampleFormControlInput1">Imagem direita</label>
@@ -275,6 +269,8 @@ foreach ($info as $key => $value) {
     
     </form>
 
+    </div>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js " integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN " crossorigin="anonymous "></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js " integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV " crossorigin="anonymous "></script>
@@ -282,8 +278,15 @@ foreach ($info as $key => $value) {
     <script>
                           let teste = document.getElementById('teste');
                           let tamanho = document.defaultView.getComputedStyle(teste, null).getPropertyValue('height');
-                          let sidebar = document.getElementById('sidebar');
-                          sidebar.setAttribute('style', 'height: calc(250% + ' + tamanho + ');');
+                          let sidebar = document.getElementById('sidebarok');
+                          var w = window;
+                          let x = w.innerWidth;
+                         
+                          if (x > 677) {
+                            sidebar.setAttribute('style', 'height:' + tamanho + ' !important; display: flex;');
+                          }
+
+                         
                            
                             
                       </script>

@@ -6,7 +6,7 @@
                                     <!--INICIANDO TEXTO CHAMADA PARA EMPRESAS-->
         <div style="margin-left: 0px !important;"  class="col-sm-12 col-md-12 col-lg-6 mt-5 ml-5 ">
 
-            <h1 style="font-size: 400%;" class=" mt-5 title-1 ">Análise e Desenvolvimento de Sistemas! <svg width="1em " height="1em " viewBox="0 0 16 16 " class="bi bi-check-all " fill="currentColor " xmlns="http://www.w3.org/2000/svg ">
+            <h1 style="font-size: 400%;" class=" ml-4  mt-5 title-1 ">Análise e Desenvolvimento de Sistemas! <svg width="1em " height="1em " viewBox="0 0 16 16 " class="bi bi-check-all " fill="currentColor " xmlns="http://www.w3.org/2000/svg ">
               <path fill-rule="evenodd " d="M8.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992a.252.252 0 0 1 .02-.022zm-.92 5.14l.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75
                                         0 1 0-1.091-1.028L9.477 9.417l-.485-.486-.943 1.179z "/>
             
@@ -18,17 +18,17 @@
         </div>
                                       <!--FINALIZANDO TEXTO CHAMADA PARA EMPRESAS-->
                                       <!--INICIANDO CAROUSEL MOSTRANDO BANNERS DOS CURSOS-->
-        <div class="col-sm-12 col-md-12 col-lg-5 mt-5 ">
+        <div class="col-sm-12 col-md-12 col-lg-5 mt-5 ml-4 ">
             <div style="transition: 200ms; " id="carouselExampleSlidesOnly" class="carousel slide carousel-fade carousel-topo-index" data-ride="carousel"data-interval="3000">
                 <div  class="carousel-inner">
                   <div  class="carousel-item carousel-fade active" data-interval="2000">
-                      <img  src="img/banner-1.jpg" class="d-block w-100" alt="...">
+                      <img  src="img/b3.jpg" class="d-block w-100" alt="...">
                   </div>
                   <div class="carousel-item carousel-fade" data-interval="2000">
-                    <img src="img/banner-2.jpg" class="d-block w-100" alt="...">
+                    <img src="img/aula01.jpg" class="d-block w-100" alt="...">
                   </div>
                   <div class="carousel-item carousel-fade" data-interval="2000">
-                    <img src="img/banner-3.png" class="d-block w-100" alt="...">
+                    <img src="img/destaque-1.jpg" class="d-block w-100" alt="...">
                   </div>
                 
                 </div>
@@ -45,7 +45,7 @@
               <h2 class="display-8 ml-0 mt-5 col-md-8 col-sm-12 mx-auto text-center chamada-text-index">Um curso que prepara o profissional para os desafios de um mercado cada vez mais promissor.</h2>
         </div>
 
-          <button   type="button " class="btn float-right mt-5 mr-5 mx-auto bg-roxo "> <a style="text-decoration: none; color: white;" href="sobre.php"> Conheça o Curso <img src="https://img.icons8.com/dotty/24/000000/filled-sent.png "/></a></button>
+          <button   type="button" style="background-color: #8e24aa !important; padding: 0.7%; width: 200px;" class="btn float-right mt-5 mr-5 mx-auto "> <a style="text-decoration: none; color: white; "  href="sobre.php"> Conheça o Curso <img src="https://img.icons8.com/dotty/24/000000/filled-sent.png "/></a></button>
 
         </div>
     </div> 
@@ -57,7 +57,7 @@
     
                                      
     
-    <div class="mt-5" style="width: 100%; background-color: rgba(180, 198, 240,1);">
+    <div class="mt-5" style="width: 100%; background-color: rgba(180, 198, 240,0.6);">
         <div class="row col-12 video-index">
 
 
@@ -126,31 +126,32 @@
 
                                     <!--INICIANDO CARDS COM DESTAQUES-->
 
-<div style=" background-color: rgba(180, 198, 240,1);">
+
+<div style=" background-color: rgba(180, 198, 240,0.6);">
   <div class="card-group mt-5 pb-5 pt-5">
       <div class="card m-5 shadow p-3 mb-5 bg-white rounded card-index" style="width: 18rem;">
+        <img class="card-img-top" src="img/jogo_1.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title"><strong>Projeto Guihô: Saúde bucal para a tribo indígena krahô</strong></h5>
+          <p class="card-text">Aplicativo e jogo que tratam e ensinam sobre a saúde bucal para o povo da tribo indígena krahô.</p>
+          <a href="pages/painel/projetos/20201124155629.php" class="btn btn-primary">Ver Trabalho</a>
+        </div>
+      </div>
       
-        <img class="card-img-top" src="img/banner-1.jpg" alt="Card image cap">
+      <div class="card m-5 shadow p-3 mb-5 bg-white rounded card-index" style="width: 18rem;">
+        <img class="card-img-top" src="img/covid_1.jpg" alt="Card image cap">
         <div class="card-body">
-          <h5 class="card-title">Titulo do Trabalho</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="pages/projeto-1.php" class="btn btn-primary">Ver Trabalho</a>
+          <h5 class="card-title"><strong>Relatório COVID-19 no Brasil - Análise de Dados.</strong></h5>
+          <p class="card-text">Neste projeto é informado as informações e dados sobre o COVID-19 no Brasil.</p>
+          <a href="pages/painel/projetos/20201124201126.php" class="btn btn-primary">Ver Trabalho</a>
         </div>
       </div>
       <div class="card m-5 shadow p-3 mb-5 bg-white rounded card-index" style="width: 18rem;">
-        <img class="card-img-top" src="img/banner-1.jpg" alt="Card image cap">
+        <img class="card-img-top" src="img/solar_1.jpg" alt="Card image cap">
         <div class="card-body">
-          <h5 class="card-title">Titulo do Trabalho</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Ver Trabalho</a>
-        </div>
-      </div>
-      <div class="card m-5 shadow p-3 mb-5 bg-white rounded card-index" style="width: 18rem;">
-        <img class="card-img-top" src="img/banner-1.jpg" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Titulo do Trabalho</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Ver Trabalho</a>
+          <h5 class="card-title"><strong>EMPREENDEDORISMO SOCIAL: Solar Tree</strong></h5>
+          <p class="card-text">Projeto feito por acadêmicos, onde tem como objetivo geral fornecer recarga de energia 5v.</p>
+          <a href="pages/painel/projetos/20201124194408.php" class="btn btn-primary">Ver Trabalho</a>
         </div>
       </div>
   </div>

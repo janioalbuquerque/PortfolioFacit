@@ -185,7 +185,7 @@ while($fila = mysqli_fetch_array($res))
     <script src="../js/script.js"></script>
 </head>
 
-<body>
+<body style="background-color: rgb(230,230,250);" >
 
 <!--================================================-INICIAND MENU / NAVBAR--==========================================--->
 
@@ -257,7 +257,7 @@ while($fila = mysqli_fetch_array($res))
 
 
 <div style="text-align: justify;" class="w-100 p-2">
-    <?php echo \'<img style="width: 500px; height: 350px !important;" src="data:image/jpeg;base64,\' . base64_encode( $fila[\'img_right\'] ) . \'" class="img-fluid float-right p-4 mt-2" alt="Responsive image">\' ?>
+    <?php echo \'<img style="width: 500px; height: 350px !important;" src="data:image/jpeg;base64,\' . base64_encode( $fila[\'img_right\'] ) . \'" class="img-fluid float-right p-4 mt-5" alt="Responsive image">\' ?>
     
         <?php echo \'<h2 class="p-2">\' . $fila["titulo"] . \'</h2>\' ; ?>
     
@@ -357,11 +357,11 @@ while($fila = mysqli_fetch_array($res))
     
     <h3 class="mt-5">Links:</h3>
 
-    <a href="#"><?php echo $fila[\'link1\']?></a> <br>
-    <a href="#"><?php echo $fila[\'link2\']?></a> <br>
-    <a href="#"><?php echo $fila[\'link3\']?></a> <br>
-    <a href="#"><?php echo $fila[\'link4\']?></a> <br>
-    <a href="#"><?php echo $fila[\'link5\']?></a> <br>
+    <a href="<?php echo $fila[\'link1\']?>"><?php echo $fila[\'link1\']?></a> <br>
+    <a href="<?php echo $fila[\'link2\']?>"><?php echo $fila[\'link2\']?></a> <br>
+    <a href="<?php echo $fila[\'link3\']?>"><?php echo $fila[\'link3\']?></a> <br>
+    <a href="<?php echo $fila[\'link4\']?>"><?php echo $fila[\'link4\']?></a> <br>
+    <a href="<?php echo $fila[\'link5\']?>"><?php echo $fila[\'link5\']?></a> <br>
 </div>
 
 <?php

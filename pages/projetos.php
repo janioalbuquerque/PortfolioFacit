@@ -32,12 +32,12 @@
         <div class="card-columns p5">
 
         
-            <div style="background-color: rgba(255, 255, 255, 0); border: none;" class="card p-5 ">
-                <a style="text-decoration: none; color:black;" href="projeto-1.php">
-                    <img src="../img/banner-1.jpg" class="card-img-top" alt="...">
-                    <div style="background-color: white;" class="card-body">
-                        <h5 class="card-title">Titulo do Trabalho</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <div style="background-color: rgba(150, 150, 150, 0); border: none;" class="card p-5 ">
+                <a style="text-decoration: none; color:black;" href="painel/projetos/20201124194408.php">
+                    <img src="../img/solar_1.jpg" class="card-img-top" alt="...">
+                    <div style="background-color: rgba(230, 230, 230, 1);;" class="card-body">
+                        <h5 class="card-title"><strong>EMPREENDEDORISMO SOCIAL: Solar Tree</strong></h5>
+                        <p class="card-text">Projeto feito por acadêmicos, onde tem como objetivo geral fornecer recarga de energia 5v.</p>
                     </div>
                 </a>
             </div>
@@ -46,48 +46,48 @@
         <div style="background-color: rgba(255, 255, 255, 0); border: none;" class="card p-5 ">
         <a style="text-decoration: none; color:black;" href="../index.php">
             <img src="../img/banner-1.jpg" class="card-img-top" alt="...">
-            <div style="background-color: white;" class="card-body">
-                <h5 class="card-title">Titulo do Trabalho</h5>
+            <div style="background-color: rgba(230, 230, 230, 1);" class="card-body">
+                <h5 class="card-title"><strong>Titulo do Trabalho</strong></h5>
                 <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
             </div>
         </a>
         </div>
 
         <div style="background-color: rgba(255, 255, 255, 0); border: none;" class="card p-3 ">
-        <a style="text-decoration: none; color:black;" href="../index.php">
-            <img src="../img/banner-1.jpg" class="card-img-top" alt="...">
-            <div style="background-color: white;" class="card-body">
-                <h5 class="card-title">Titulo do Trabalho</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <a style="text-decoration: none; color:black;" href="painel/projetos/20201124155629.php">
+            <img src="../img/jogo_1.jpg" class="card-img-top" alt="...">
+            <div style="background-color: rgba(230, 230, 230, 1);" class="card-body">
+                <h5 class="card-title"><strong>Projeto Guihô: Saúde bucal para a tribo indígena krahô</strong></h5>
+                <p class="card-text">Aplicativo e jogo que tratam e ensinam sobre a saúde bucal para o povo da tribo indígena krahô.</p>
             </div>
         </a>
         </div>
 
         <div style="background-color: rgba(255, 255, 255, 0); border: none;" class="card p-3 "> 
         <a style="text-decoration: none; color:black;" href="../index.php">
-            <img src="../img/banner-1.jpg" class="card-img-top" alt="...">
-            <div style="background-color: white;" class="card-body">
-                <h5 class="card-title">Titulo do Trabalho</h5>
+            <img src="../img/banner-3.png" class="card-img-top" alt="...">
+            <div style="background-color: rgba(230, 230, 230, 1);" class="card-body">
+                <h5 class="card-title"><strong>Titulo do Trabalho</strong></h5>
                 <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
             </div>
         </a>
         </div>
 
         <div style="background-color: rgba(255, 255, 255, 0); border: none;" class="card p-5 ">
-        <a style="text-decoration: none; color:black;" href="../index.php">
-            <img src="../img/banner-1.jpg" class="card-img-top" alt="...">
-            <div style="background-color: white;" class="card-body">
-                <h5 class="card-title">Titulo do Trabalho</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <a style="text-decoration: none; color:black;" href="painel/projetos/20201124201126.php">
+            <img src="../img/covid_1.jpg" class="card-img-top" alt="...">
+            <div style="background-color: rgba(230, 230, 230, 1);" class="card-body">
+                <h5 class="card-title"><strong>Relatório COVID-19 no Brasil - Análise de Dados.</strong></h5>
+                <p class="card-text">Neste projeto é informado as informações e dados sobre o COVID-19 no Brasil.</p>
             </div>
         </a>
         </div>
         
         <div style="background-color: rgba(255, 255, 255, 0); border: none;" class="card p-5 ">
         <a style="text-decoration: none; color:black;" href="../index.php">
-            <img src="../img/banner-1.jpg" class="card-img-top" alt="...">
-            <div style="background-color: white;" class="card-body">
-                <h5 class="card-title">Titulo do Trabalho</h5>
+            <img src="../img/destaque-1.jpg" class="card-img-top" alt="...">
+            <div style="background-color: rgba(230, 230, 230, 1);" class="card-body">
+                <h5 class="card-title"><strong>Titulo do Trabalho</strong></h5>
                 <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
             </div>
         </a>

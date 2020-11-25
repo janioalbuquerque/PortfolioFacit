@@ -7,6 +7,8 @@ if(!isset($_SESSION))
 
 
 
+
+
 #SE  NÃO EXISTIR SESSÃO USUARIO, VOLTAR PARA INDEX
 if (!$_SESSION['usuario']) {
     header('location: ../../index.php');
